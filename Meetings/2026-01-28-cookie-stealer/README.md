@@ -4,7 +4,7 @@ Author: Carson He (zakstamaj)
 
 CTF technical skills workshop on XSS to steal an admin session cookie and gain unauthorized access to an admin panel.
 
-Challenge website: http://35.80.161.224/
+Challenge website: <http://35.80.161.224/>
 
 ## Initial analysis
 
