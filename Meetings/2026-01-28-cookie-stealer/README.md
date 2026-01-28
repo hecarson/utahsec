@@ -36,10 +36,10 @@ The corresponding `admin.html` template at [templates/admin.html](app/templates/
 
 Notice that the `/admin` route checks whether the client is an admin using the Flask session. Also note that Flask sessions are implemented with cookies (<https://flask.palletsprojects.com/en/stable/quickstart/#sessions>).
 
-> [!IMPORTANT]
+> [!NOTE]
 > This suggests that if we can steal a valid admin session cookie, then we can access the admin panel and get the flag.
 
-> [!NOTE]
+> [!TIP]
 > Flask session cookies contain Base64 encoded JSON data for the claims. Why can't we just make our own session cookie with `{"user":"admin"}`?
 >
 > Flask session cookies are cryptographically signed with the Flask application's secret key. You can see that the Flask secret key is set in [main.py](app/main.py):
@@ -66,12 +66,13 @@ Every 5 seconds, the ticket reader:
     3. Renders the ticket in a headless Chromium browser
     4. Saves a screenshot of the ticket
 
-> [!IMPORTANT]
+> [!NOTE]
 > The tickets are rendered in a browser that is signed in as admin. The browser also has an admin session cookie. Perhaps there is some way that we can steal this admin cookie...
 
 ## XSS vulnerability
 
-**Your turn:** Can you identify a XSS vulnerability in the ticket system? Look carefully at the ticket reader in [read_tickets.py](app/read_tickets.py), how it fetches tickets, and how the web application returns tickets.
+> [!IMPORTANT]
+> **Your turn:** Can you identify a XSS vulnerability in the ticket system? Look carefully at the ticket reader in [read_tickets.py](app/read_tickets.py), how it fetches tickets, and how the web application returns tickets.
 
 <details>
 <summary>Answer (click to reveal)</summary>
@@ -113,7 +114,8 @@ It seems that our XSS payload might be as simple as `<script>...</script>`. Howe
                 return render_template("tickets.html", error="input contains forbidden tags")
 ```
 
-**Your turn:** How can we construct a XSS payload that bypasses the blacklist? Feel free to search the web.
+> [!IMPORTANT]
+> **Your turn:** How can we construct a XSS payload that bypasses the blacklist? Feel free to search the web.
 
 <details>
 <summary>Answer (click to reveal)</summary>
@@ -161,7 +163,8 @@ Open the file again with your web browser and check your Request Catcher subdoma
 
 ### Exfiltrating the session cookie
 
-**Your turn:** Adapt the payload in the previous part to exfiltrate the victim's cookies to your Request Catcher subdomain.
+> [!IMPORTANT]
+> **Your turn:** Adapt the payload in the previous part to exfiltrate the victim's cookies to your Request Catcher subdomain.
 
 <details>
 <summary>Answer (click to reveal)</summary>
