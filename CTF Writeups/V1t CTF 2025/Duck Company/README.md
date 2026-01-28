@@ -1,6 +1,6 @@
 # V1t CTF 2025: Duck Company
 
-Author: Walker Dauphin II (obsydian_falcon)
+Author: obsydian_falcon
 
 ## Description
 

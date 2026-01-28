@@ -1,6 +1,6 @@
 # V1t Duck CTF: The Forgotten Inventory
 
-Author: Walker Dauphin II (obsydian_falcon)
+Author: obsydian_falcon
 
 ## Description
 

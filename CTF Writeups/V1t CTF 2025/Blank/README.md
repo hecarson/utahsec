@@ -1,6 +1,6 @@
 # V1t Duck CTF: Blank 
 
-Author: Walker Dauphin II (obsydian_falcon)
+Author: obsydian_falcon
 
 ## Description
 

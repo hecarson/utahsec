@@ -1,6 +1,6 @@
 # V1t Duck CTF: Among_USniversity 
 
-Author: Walker Dauphin II (obsydian_falcon)
+Author: obsydian_falcon
 
 ## Description
 
