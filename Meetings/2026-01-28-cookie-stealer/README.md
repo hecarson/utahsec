@@ -96,7 +96,7 @@ Also notice that the ticket reader in [read_tickets.py](app/read_tickets.py) use
             driver.save_screenshot(f"tickets/{ticket_id}.png")
 ```
 
-By default, the `Content-Type` header on Flask reponses will be `text/html`. This means that ticket content will be rendered as HTML by the headless browser, and any JavaScript in the HTML will be executed!
+**Key insight**: By default, the `Content-Type` header on Flask reponses will be `text/html`. This means that ticket content will be rendered as HTML by the headless browser, and any JavaScript in the HTML will be executed!
 </details>
 
 ## Exploiting the XSS vulnerability
@@ -113,7 +113,7 @@ It seems that our XSS payload might be as simple as `<script>...</script>`. Howe
                 return render_template("tickets.html", error="input contains forbidden tags")
 ```
 
-How can we bypass the blacklist? Feel free to search the web.
+**Your turn:** How can we construct a XSS payload that bypasses the blacklist? Feel free to search the web.
 
 <details>
 <summary>Answer (click to reveal)</summary>
@@ -161,7 +161,7 @@ Open the file again with your web browser and check your Request Catcher subdoma
 
 ### Exfiltrating the session cookie
 
-Adapt the payload in the previous part to exfiltrate the victim's cookies to your Request Catcher subdomain.
+**Your turn:** Adapt the payload in the previous part to exfiltrate the victim's cookies to your Request Catcher subdomain.
 
 <details>
 <summary>Answer (click to reveal)</summary>
