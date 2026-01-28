@@ -8,7 +8,7 @@ Challenge website: <http://35.80.161.224/>
 
 ## Initial analysis
 
-Take a bit of time to explore the website and the code inside the [app](app) folder. Don't worry if you don't understand the code; this guide will explain the important bits of the code.
+Take a bit of time to explore the website and the source code of the website inside the [app](app) folder. Don't worry if you don't understand the code; this guide will explain the important bits of the code.
 
 The web application is written in Python using the Flask web framework.
 
