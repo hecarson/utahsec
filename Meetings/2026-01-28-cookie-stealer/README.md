@@ -71,7 +71,7 @@ Every 5 seconds, the ticket reader:
 
 ## XSS vulnerability
 
-Can you identify a XSS vulnerability in the ticket system? Look carefully at the ticket reader in [read_tickets.py](app/read_tickets.py), how it fetches tickets, and how the web application returns tickets.
+**Your turn:** Can you identify a XSS vulnerability in the ticket system? Look carefully at the ticket reader in [read_tickets.py](app/read_tickets.py), how it fetches tickets, and how the web application returns tickets.
 
 <details>
 <summary>Answer (click to reveal)</summary>
