@@ -243,7 +243,7 @@ Now that we have a remote shell into the target system, we can do a lot of thing
 Look around the files of the system with the `ls` and `cd` commands. You can print the contents of a file with the `cat` command.
 
 > [!IMPORTANT]
-> Can you find the flag?
+> Can you find the flag.txt file?
 
 <details>
 <summary>Answer (click to reveal)</summary>
