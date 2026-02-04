@@ -197,7 +197,7 @@ set payload windows/x64/meterpreter/bind_tcp
 >
 > When an exploit is able to achieve remote code execution, attackers usually want to gain remote shell access over the Internet to run any commands that they want on the target. A bind shell payload starts a shell on the target machine with a listener socket on the target, waiting for the attacker to initiate a network connection to the target. A reverse shell payload starts a shell and initiates a network connection to the attacker's machine. Since firewalls tend to have strict rules with inbound connections compared to outbound connections, reverse shells can bypass firewalls much easier than bind shells.
 >
-> However, a reverse shell requires the attacker to set up the listener socket, which usually requires port forwarding because of NAT in IPv4 networks. We do not have access to configure port forwarding on the university network, so we use a bind shell instead in this lab. I have configured the target VM to accept inbound connections to port 4444, which is the default bind shell listening port for the payload.
+> However, a reverse shell requires the attacker to set up the listener socket, which usually requires port forwarding because of NAT in IPv4 networks. We do not have access to configure port forwarding on the university network, so we use a bind shell instead in this lab. I have configured the target VM to accept inbound connections to port 4444, which is the default listening port for the bind shell payload.
 
 > [!NOTE]
 > What is Meterpreter?
