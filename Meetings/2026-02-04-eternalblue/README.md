@@ -255,7 +255,6 @@ We can also dump the password hashes of user accounts on the system:
 
 ```
 hashdump
-
 ```
 
 > [!IMPORTANT]
