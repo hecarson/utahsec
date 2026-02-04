@@ -234,7 +234,7 @@ This should return the current user that the shell is running under. You should 
 Server username: NT AUTHORITY\SYSTEM
 ```
 
-Congratulations! You now have a remote shell logged in as the superuser and pwned the target system!
+Congratulations! You now have a remote shell logged in as the superuser and have pwned the target system!
 
 ## Post-exploitation and data exfiltration
 
